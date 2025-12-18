@@ -31,7 +31,10 @@ class Migrate < Formula
   end
 
   def install
-    bin.install "migrate"
+    # Binary is named with platform suffix in archive
+    Dir.glob("migrate_*").each do |f|
+      bin.install f => "migrate"
+    end
   end
 
   test do
