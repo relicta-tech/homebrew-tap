@@ -5,28 +5,28 @@
 class Relicta < Formula
   desc "AI-powered release management for modern software teams"
   homepage "https://github.com/relicta-tech/relicta"
-  version "2.3.0"
+  version "2.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Darwin_aarch64.tar.gz"
-      sha256 "12cef317b04571cdb2d0902dedc1b5a1a7550a4881e343be99cac70e3babf472"
+      sha256 "f1f77b09dd0a973d0776643549fe1f7797ed7ccad6e54f24b427f91b0830c89b"
     end
     on_intel do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Darwin_x86_64.tar.gz"
-      sha256 "cce6281388d485ee593989710581b55f316402333a66f644242f362cfdc3bf89"
+      sha256 "fcadae73db695f3b869a934b3a15fac8ca69c260f819357c7df6cdf83db127f9"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Linux_aarch64.tar.gz"
-      sha256 "57db3067de854a76a893240971ce12f483d9532a45f8797ad3b14b5208d18480"
+      sha256 "12bace7a489c5d4febe3eacfb364617f1f14ebf887bd740d99a01d3019f36599"
     end
     on_intel do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Linux_x86_64.tar.gz"
-      sha256 "39632e74306658f6ffda25591d572468d1fbfd9dd842316efda6e3c34784a71f"
+      sha256 "b899702c33faa4dcac51def6379c7c646a8b1f2862ef4f800f67eb220ed7354d"
     end
   end
 
