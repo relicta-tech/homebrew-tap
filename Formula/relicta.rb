@@ -3,30 +3,30 @@
 
 # Homebrew formula for Relicta
 class Relicta < Formula
-  desc "AI-powered release management for modern software teams"
+  desc "The governance layer for software change"
   homepage "https://github.com/relicta-tech/relicta"
-  version "2.8.2"
+  version "2.9.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Darwin_aarch64.tar.gz"
-      sha256 "1f3ef3e40e30f13119a602c4773ca4b588d34fea5a54fc121aa53972faca8658"
+      sha256 "c66ee9650e985ac7f6127299c835d3166bacf8eda9e9064cd95e741300302b88"
     end
     on_intel do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Darwin_x86_64.tar.gz"
-      sha256 "6b7e83c411c6f33124599289a1df28b4dc5bd9af91c811172e570baf5215d43b"
+      sha256 "c0d68c939bdf13de135fcd930cf2f44b88833e06b3588f5acff8b139e99b68d5"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Linux_aarch64.tar.gz"
-      sha256 "9003b0a610a3e67aace4988f9af14ec60fb8a8cb8e44c425d577bfca30e22c07"
+      sha256 "2d70256a5200f2d1de1d59e1525e1ab355fba9a9c04f91d1fe09221d445e5098"
     end
     on_intel do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Linux_x86_64.tar.gz"
-      sha256 "0054d669a90b43e8879ae898e5ca85cfc539c75a12d9d59747eccc614f8464e8"
+      sha256 "493eda1c8695f39e4ff384d97bcffc41ca4bb10f2b80725dd066c2eab2d3095d"
     end
   end
 
