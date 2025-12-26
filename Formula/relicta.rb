@@ -5,28 +5,28 @@
 class Relicta < Formula
   desc "The governance layer for software change"
   homepage "https://github.com/relicta-tech/relicta"
-  version "2.9.2"
+  version "2.11.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Darwin_aarch64.tar.gz"
-      sha256 "c66ee9650e985ac7f6127299c835d3166bacf8eda9e9064cd95e741300302b88"
+      sha256 "5cd86b2c0514fb85c8daabbe768cd283de44bb116ea3ff1cf96348713eb53091"
     end
     on_intel do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Darwin_x86_64.tar.gz"
-      sha256 "c0d68c939bdf13de135fcd930cf2f44b88833e06b3588f5acff8b139e99b68d5"
+      sha256 "b890cd3a5c8659ee78a157c508c280f697747d763398c55c90933a07e0eb3de0"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Linux_aarch64.tar.gz"
-      sha256 "2d70256a5200f2d1de1d59e1525e1ab355fba9a9c04f91d1fe09221d445e5098"
+      sha256 "cf1f2155a294120e221df9bf3c7c676d4896303e1a43c7a68ca05efebdce17dd"
     end
     on_intel do
       url "https://github.com/relicta-tech/relicta/releases/download/v#{version}/relicta_Linux_x86_64.tar.gz"
-      sha256 "493eda1c8695f39e4ff384d97bcffc41ca4bb10f2b80725dd066c2eab2d3095d"
+      sha256 "5ac51440a82bf96f81e49f3d188a6a7ac6fed02aef3ef19684f6cf21001a4b8a"
     end
   end
 
