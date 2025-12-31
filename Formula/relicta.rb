@@ -5,21 +5,21 @@
 class Relicta < Formula
   desc "AI-powered release governance for modern software teams"
   homepage "https://github.com/relicta-tech/relicta"
-  version "3.1.1"
+  version "3.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/relicta-tech/relicta/releases/download/v3.1.1/relicta_darwin_amd64.tar.gz"
-      sha256 "5fe94c5f59ee11bc41a0bb0c7c502de29a759042aacc6548c7842377b7d05e27"
+      url "https://github.com/relicta-tech/relicta/releases/download/v3.1.3/relicta_darwin_amd64.tar.gz"
+      sha256 "7fa63e9582377842776c369357f0edb90f586bfeabd785d8cf84e6366072535f"
 
       def install
         bin.install "relicta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/relicta-tech/relicta/releases/download/v3.1.1/relicta_darwin_arm64.tar.gz"
-      sha256 "1286f598fb4d0343108b94c77941a111fe67b7cb59868795c92e919aeeef4acf"
+      url "https://github.com/relicta-tech/relicta/releases/download/v3.1.3/relicta_darwin_arm64.tar.gz"
+      sha256 "652de2f63f9e45fc0d047ed1a343a9d25eed630c555b05719ed640ea96e5afb9"
 
       def install
         bin.install "relicta"
@@ -29,15 +29,15 @@ class Relicta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relicta-tech/relicta/releases/download/v3.1.1/relicta_linux_amd64.tar.gz"
-      sha256 "efba5480fd4f0e0135f3a51842b836745973e18727b17a7648cd9b93928cca63"
+      url "https://github.com/relicta-tech/relicta/releases/download/v3.1.3/relicta_linux_amd64.tar.gz"
+      sha256 "69cac403b2dd3ba55c70b094a0467b4014e58d877937526607e78097a3527464"
       def install
         bin.install "relicta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relicta-tech/relicta/releases/download/v3.1.1/relicta_linux_arm64.tar.gz"
-      sha256 "44f22ce1d4ac506e2bad68707b6d1279bb84c9553c41de1bcbfeca533680a00d"
+      url "https://github.com/relicta-tech/relicta/releases/download/v3.1.3/relicta_linux_arm64.tar.gz"
+      sha256 "42542cf81036624129e2915a7566bf42b4c011f46fe99274a587e9943a3949e2"
       def install
         bin.install "relicta"
       end
