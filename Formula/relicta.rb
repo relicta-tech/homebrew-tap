@@ -11,7 +11,7 @@ class Relicta < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/relicta-tech/relicta/releases/download/v3.3.4/relicta_darwin_amd64.tar.gz"
-      sha256 "fdb1fec98eb9a5c0ffceae17b8954b773829f425627a4cb49e6fbdc89a3b9293"
+      sha256 "631624920398ef2d1b651e995533adc10711177038fe98d6b31bbf41b4d58b5f"
 
       def install
         bin.install "relicta"
@@ -19,7 +19,7 @@ class Relicta < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/relicta-tech/relicta/releases/download/v3.3.4/relicta_darwin_arm64.tar.gz"
-      sha256 "ca83bbee34b602118912a2b753621a05f4d9d9421a9c8c942a4d288a9c334616"
+      sha256 "113dd793581b31e741617929bc68f04ae4682c619f7ad2df0328e6201877033e"
 
       def install
         bin.install "relicta"
@@ -30,14 +30,14 @@ class Relicta < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/relicta-tech/relicta/releases/download/v3.3.4/relicta_linux_amd64.tar.gz"
-      sha256 "6bf2a92c5cb8f9332b5acae80baca76485e7578c4fc8c3c26be2eecd559c26df"
+      sha256 "e4961e268fd3d44e63a2c564b9e6fee837cc2dc30023b0bacf1471287fb3ad8b"
       def install
         bin.install "relicta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/relicta-tech/relicta/releases/download/v3.3.4/relicta_linux_arm64.tar.gz"
-      sha256 "69811d0bcfb1de7be7c6b1b6ed06e690770feace4adc08552570cd33059d5f42"
+      sha256 "e4a6b23a413408ddf498bf7ec4d8ddcfcf8bbb4ed419bf034932008d0ebd9cac"
       def install
         bin.install "relicta"
       end
