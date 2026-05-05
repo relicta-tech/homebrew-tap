@@ -10,16 +10,16 @@ class Relicta < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/relicta-tech/relicta/releases/download/v4.0.0/relicta_darwin_amd64.tar.gz"
-      sha256 "87e8c8682743707b8cd92a69467646a7a6d232c6fe16cde32e0b6c5ab3f8d29"
+       url "https://github.com/relicta-tech/relicta/releases/download/v4.0.0/relicta_darwin_amd64.tar.gz"
+       sha256 "87e86c8682743707b8cd92a69467646a7a6d232c6fe16cde32e0b6c5ab3f8d29"
 
       def install
         bin.install "relicta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/relicta-tech/relicta/releases/download/v4.0.0/relicta_darwin_arm64.tar.gz"
-      sha256 "1342c70834946a5f5f794a07ae6ddf2e725d2119c89dca37cfbde33a13b5da8d"
+       url "https://github.com/relicta-tech/relicta/releases/download/v4.0.0/relicta_darwin_arm64.tar.gz"
+       sha256 "1342c70894946a5f5f794a07ae6ddf2e725d2119c89dca37cfbde33a13b5da8d"
 
       def install
         bin.install "relicta"
@@ -29,24 +29,24 @@ class Relicta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relicta-tech/relicta/releases/download/v4.0.0/relicta_linux_amd64.tar.gz"
-      sha256 "693ce571913999d56b3981eeaad9930b024f37ea02272634c54d006212051cda"
+       url "https://github.com/relicta-tech/relicta/releases/download/v4.0.0/relicta_linux_amd64.tar.gz"
+       sha256 "693ce571913999d56b3981eeaad9930b024f37ea02272634c54d006212051cda"
 
-      def install>
+      def install
         bin.install "relicta"
-      end>
-    end>
+      end
+    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relicta-tech/relicta/releases/download/v4.0.0/relicta_linux_arm64.tar.gz"
-      sha256 "40f1aa37d3d1e23a36c3ba83f38fae55385329496e578d2cbb20370621d03759"
+       url "https://github.com/relicta-tech/relicta/releases/download/v4.0.0/relicta_linux_arm64.tar.gz"
+       sha256 "40f1aa37d3d1e23a36c3ba83f38fae55385329496e578d2cbb20370621d03759"
 
-      def install>
+      def install
         bin.install "relicta"
-      end>
-    end>
-  end>
+      end
+    end
+  end
 
-  test do>
+  test do
     system "#{bin}/relicta", "version"
-  end>
-end>
+  end
+end
